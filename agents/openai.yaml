@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Q Pets"
+  short_description: "Generate chibi Codex desktop pets from real portrait photos."
+  default_prompt: "Create a Q-version Codex pet from these portrait photos."
