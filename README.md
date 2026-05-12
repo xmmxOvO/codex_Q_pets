@@ -4,6 +4,31 @@
 
 它会生成完整的 Codex pet：主形象、九行动作、`spritesheet.webp`、`pet.json`、QA 总图和预览视频。适合把自己、朋友、教练、博主、同事做成 Codex 桌面小伙伴。
 
+## 示例案例：蒋教练桌宠
+
+仓库里放了一个已经生成好的示例，方便你先看最终效果：
+
+![蒋教练桌宠 contact sheet](examples/jiang-coach/contact-sheet.png)
+
+示例文件在这里：
+
+```text
+examples/jiang-coach/
+  pet.json
+  spritesheet.webp
+  contact-sheet.png
+```
+
+如果你想先把这个示例装进自己的 Codex，可以运行：
+
+```bash
+mkdir -p ~/.codex/pets/jiang-coach
+cp examples/jiang-coach/pet.json ~/.codex/pets/jiang-coach/
+cp examples/jiang-coach/spritesheet.webp ~/.codex/pets/jiang-coach/
+```
+
+这个示例只包含生成后的桌宠文件和 QA 图，不包含原始真人照片。
+
 ## 1. 安装和使用
 
 先把这个仓库克隆到 Codex skills 目录：
