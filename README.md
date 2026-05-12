@@ -2,18 +2,18 @@
 
 把几张真人照片变成「萌系 Q 版 Codex 桌宠」的 Codex Skill。
 
-它会生成完整的 Codex pet：主形象、九行动作、`spritesheet.webp`、`pet.json`、QA 总图和预览视频。适合把自己、朋友、教练、博主、同事做成 Codex 桌面小伙伴。
+它会生成完整的 Codex pet：主形象、九行动作、`spritesheet.webp`、`pet.json`、QA 总图和预览视频。适合把自己、朋友、博主、同事做成 Codex 桌面小伙伴。
 
-## 示例案例：蒋教练桌宠
+## 示例案例：西门桌宠
 
 仓库里放了一个已经生成好的示例，方便你先看最终效果：
 
-![蒋教练桌宠 contact sheet](examples/jiang-coach/contact-sheet.png)
+![西门桌宠 contact sheet](examples/ximen/contact-sheet.png)
 
 示例文件在这里：
 
 ```text
-examples/jiang-coach/
+examples/ximen/
   pet.json
   spritesheet.webp
   contact-sheet.png
@@ -22,9 +22,9 @@ examples/jiang-coach/
 如果你想先把这个示例装进自己的 Codex，可以运行：
 
 ```bash
-mkdir -p ~/.codex/pets/jiang-coach
-cp examples/jiang-coach/pet.json ~/.codex/pets/jiang-coach/
-cp examples/jiang-coach/spritesheet.webp ~/.codex/pets/jiang-coach/
+mkdir -p ~/.codex/pets/ximen
+cp examples/ximen/pet.json ~/.codex/pets/ximen/
+cp examples/ximen/spritesheet.webp ~/.codex/pets/ximen/
 ```
 
 这个示例只包含生成后的桌宠文件和 QA 图，不包含原始真人照片。
@@ -49,14 +49,14 @@ git clone https://github.com/xmmxOvO/codex_Q_pets.git "$CODEX_HOME/skills/codex-
 
 ```text
 使用 codex-q-pets，把这些真人照片生成一个萌系 Q 版 Codex 桌宠。
-名字叫小蒋。请参照最后一张图的 Q 版风格。
+名字叫西门。请参照最后一张图的 Q 版风格。
 ```
 
 也可以这样说：
 
 ```text
 用 codex-q-pets，根据这几张人像照片做一个 Codex 桌宠。
-保留黑色短发、圆框眼镜、白背心、健身教练气质。
+保留黑色短发、圆框眼镜、红色 hoodie、可爱创作者气质。
 ```
 
 Codex 会自动按这个流程做：
@@ -88,7 +88,7 @@ Codex 会自动按这个流程做：
 最好同时告诉 Codex 你最想保留什么：
 
 ```text
-保留黑色短发、圆框眼镜、白背心、手表、健身教练气质。
+保留黑色短发、圆框眼镜、红色 hoodie、可爱创作者气质。
 ```
 
 不太适合的照片：
@@ -159,13 +159,13 @@ pet-runs/<pet-id>/
 
 ```bash
 scripts/new_q_pet_run.py \
-  --pet-name "小蒋" \
+  --pet-name "西门" \
   --reference /absolute/path/photo1.jpg \
   --reference /absolute/path/photo2.jpg \
   --reference /absolute/path/photo3.jpg \
   --style-reference /absolute/path/q-style.jpg \
-  --identity-notes "black fluffy hair, round glasses, white tank top, fitness coach energy" \
-  --output-dir /absolute/path/pet-runs/xiao-jiang \
+  --identity-notes "black fluffy hair, round glasses, red hoodie, playful creator energy" \
+  --output-dir /absolute/path/pet-runs/ximen \
   --force
 ```
 
